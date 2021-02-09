@@ -30,7 +30,7 @@ map \           :NERDTreeToggle<CR>
 " File tree browser showing current file - pipe (shift-backslash)
 map \|          :NERDTreeFind<CR>
 
-"indent/unindent visual mode selection with tab/shift+tab
+" indent/unindent visual mode selection with tab/shift+tab
 vmap <tab> >gv
 vmap <s-tab> <gv
 
@@ -42,4 +42,6 @@ map <leader>/   <plug>NERDCommenterToggle
 " Easy access to the shell
 map <Leader><Leader> :!
 
-
+" Copy paste with + registrer
+vnoremap <C-y> "+y
+map <C-p> "+p
