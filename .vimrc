@@ -45,6 +45,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
 
+" Vim Multiple Cursor
+Plug 'terryma/vim-multiple-cursors'
+
 runtime! init/**.vim
 
 if filereadable($HOME . "/.vimrc.local")
