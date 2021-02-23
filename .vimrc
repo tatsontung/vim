@@ -38,6 +38,7 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
 " coc intellisense Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

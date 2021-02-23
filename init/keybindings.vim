@@ -45,3 +45,9 @@ map <Leader><Leader> :!
 " Copy paste with + registrer
 vnoremap <C-y> "+y
 map <C-p> "+p
+
+" Fzf Mapping
+noremap <C-b> :Buffers<CR>
+nnoremap <C-g>g :Ag<CR>
+nnoremap <leader><leader> :Commands<CR>
+nnoremap <C-p> :Files<CR>
