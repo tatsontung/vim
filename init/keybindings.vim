@@ -4,6 +4,12 @@
 let mapleader = ","
 let maplocalleader = ";"
 
+" Navigation
+" TAB in general mode will move to text buffer
+nnoremap <silent> <TAB> :bnext<CR>
+" SHIFT-TAB will go back
+nnoremap <silent> <S-TAB> :bprevious<CR>
+
 " Search
 nmap <leader>s  :%s/
 vmap <leader>s  :s/

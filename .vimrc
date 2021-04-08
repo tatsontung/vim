@@ -1,18 +1,25 @@
 " Specify a directory for plugins
 " - For Neovim: stdpath('data') . '/plugged'
 " - Avoid using standard Vim directory names like 'plugin'
+" Automatic installation for vim-plug IFF not currently installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+      \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+if filereadable($HOME . "/.vimrc.local")
+  source ~/.vimrc.local
+endif
+
 call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 " ColorSchemes
 Plug 'gruvbox-community/gruvbox'
-" Status line bar
+" Status Line bar
 Plug 'vim-airline/vim-airline'
-syntax on
-set t_Co=256
-set background=dark
-silent! colorscheme gruvbox
-silent! let g:airline_theme='gruvbox'
+Plug 'vim-airline/vim-airline-themes'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -49,13 +56,7 @@ Plug 'preservim/nerdcommenter'
 " Vim Multiple Cursor
 Plug 'terryma/vim-multiple-cursors'
 
-runtime! init/**.vim
-
-if filereadable($HOME . "/.vimrc.local")
-  source ~/.vimrc.local
-endif
-
-runtime! init/**.vim
-
-" Initialize plugin system
+" List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
+
+runtime! init/**.vim
