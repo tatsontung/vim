@@ -19,7 +19,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'gruvbox-community/gruvbox'
 " Status Line bar
 Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+"Plug 'vim-airline/vim-airline-themes'
 
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
@@ -32,7 +32,6 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
 
 " Using a non-master branch
 Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
@@ -50,8 +49,17 @@ Plug 'junegunn/fzf.vim'
 " coc intellisense Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Completion
+Plug 'mattn/emmet-vim', { 'for': 'html' }
+
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
+
+" Fugitive: Git from within Vim
+Plug 'tpope/vim-fugitive'
+
+" Show git status in the gutter
+Plug 'airblade/vim-gitgutter'
 
 " Vim Multiple Cursor
 Plug 'terryma/vim-multiple-cursors'

@@ -4,11 +4,13 @@
 let mapleader = ","
 let maplocalleader = ";"
 
-" Navigation
+" Navigation with buffer
 " TAB in general mode will move to text buffer
 nnoremap <silent> <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <silent> <S-TAB> :bprevious<CR>
+" CTRL-W will delete the current buffer
+nnoremap <silent> <C-w> :bdelete<CR>
 
 " Search
 nmap <leader>s  :%s/
@@ -56,4 +58,4 @@ map <C-p> "+p
 noremap <C-b> :Buffers<CR>
 nnoremap <C-g>g :Ag<CR>
 nnoremap <leader><leader> :Commands<CR>
-nnoremap <C-p> :Files<CR>
+nnoremap <C-f> :Files<CR>
