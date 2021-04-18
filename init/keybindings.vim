@@ -10,7 +10,7 @@ nnoremap <silent> <TAB> :bnext<CR>
 " SHIFT-TAB will go back
 nnoremap <silent> <S-TAB> :bprevious<CR>
 " CTRL-W will delete the current buffer
-nnoremap <silent> <C-w> :bdelete<CR>
+nnoremap <silent> <leader>q :bdelete<CR>
 
 " Search
 nmap <leader>s  :%s/
