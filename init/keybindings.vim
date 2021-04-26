@@ -60,3 +60,6 @@ nnoremap <C-g>g :Ag<CR>
 nnoremap <C-f>c :Commands<CR>
 nnoremap <C-f>f :Files<CR>
 nnoremap <silent> <C-f>p :Files <C-R>=expand('%:h')<CR><CR>
+
+" Select all
+nmap <C-a> gg<S-v>G

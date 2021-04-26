@@ -64,6 +64,9 @@ Plug 'airblade/vim-gitgutter'
 " Vim Multiple Cursor
 Plug 'terryma/vim-multiple-cursors'
 
+" Vim Polyglot
+Plug 'sheerun/vim-polyglot'
+
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
 
