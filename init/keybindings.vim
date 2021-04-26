@@ -6,10 +6,10 @@ let maplocalleader = ";"
 
 " Navigation with buffer
 " TAB in general mode will move to text buffer
-nnoremap <silent> <TAB> :bnext<CR>
+nnoremap <silent> <leader>] :bnext<CR>
 " SHIFT-TAB will go back
-nnoremap <silent> <S-TAB> :bprevious<CR>
-" CTRL-W will delete the current buffer
+nnoremap <silent> <leader>[ :bprevious<CR>
+" Leader q will delete the current buffer
 nnoremap <silent> <leader>q :bdelete<CR>
 
 " Search
@@ -48,14 +48,15 @@ map <leader>rt :!~/.vim/bin/update >/dev/null &<CR>
 map <leader>/   <plug>NERDCommenterToggle
 
 " Easy access to the shell
-map <Leader><Leader> :!
+map <leader><leader> :!
 
 " Copy paste with + registrer
-vnoremap <C-y> "+y
-map <C-p> "+p
+vnoremap <leader>c "+y
+map <leader>v "+p
 
 " Fzf Mapping
 noremap <C-b> :Buffers<CR>
 nnoremap <C-g>g :Ag<CR>
-nnoremap <leader><leader> :Commands<CR>
-nnoremap <C-f> :Files<CR>
+nnoremap <C-f>c :Commands<CR>
+nnoremap <C-f>f :Files<CR>
+nnoremap <silent> <C-f>p :Files <C-R>=expand('%:h')<CR><CR>
