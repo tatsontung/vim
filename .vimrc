@@ -67,6 +67,12 @@ Plug 'terryma/vim-multiple-cursors'
 " Vim Polyglot
 Plug 'sheerun/vim-polyglot'
 
+" Vim Start Screen
+Plug 'mhinz/vim-startify'
+
+" Vim Dev Icons
+Plug 'ryanoasis/vim-devicons'
+
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
 

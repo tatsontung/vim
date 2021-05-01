@@ -1,4 +1,5 @@
 scriptencoding utf-8
+set encoding=UTF-8
 
 set guifont=Monofur:h14
 set guioptions-=T               " Remove GUI toolbar
