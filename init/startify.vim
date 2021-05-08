@@ -21,6 +21,7 @@ let g:startify_bookmarks = [
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'b': '~/.bashrc' },
             \ { 'z': '~/.zshrc' },
+            \ { 'v': '~/.vim/.vimrc' },
             \ '~/Blog',
             \ '~/Code',
             \ '~/Pics',

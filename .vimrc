@@ -73,6 +73,9 @@ Plug 'mhinz/vim-startify'
 " Vim Dev Icons
 Plug 'ryanoasis/vim-devicons'
 
+" Vim Floating terminal
+Plug 'voldikss/vim-floaterm'
+
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
 

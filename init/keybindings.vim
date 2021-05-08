@@ -49,6 +49,7 @@ map <leader>/   <plug>NERDCommenterToggle
 
 " Easy access to the shell
 map <leader><leader> :!
+map <leader>t :terminal<CR>
 
 " Copy paste with + registrer
 vnoremap <leader>c "+y
