@@ -5,12 +5,9 @@ let mapleader = ","
 let maplocalleader = ";"
 
 " Navigation with buffer
-" TAB in general mode will move to text buffer
-nnoremap <silent> <leader>] :bnext<CR>
-" SHIFT-TAB will go back
-nnoremap <silent> <leader>[ :bprevious<CR>
-" Leader q will delete the current buffer
-nnoremap <silent> <leader>q :bdelete<CR>
+nnoremap <leader>] :bnext<CR>
+nnoremap <leader>[ :bprevious<CR>
+nnoremap <leader>q :bdelete<CR>
 
 " Search
 nmap <leader>s  :%s/
