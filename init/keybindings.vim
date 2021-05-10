@@ -43,6 +43,8 @@ map <leader>rt :!~/.vim/bin/update >/dev/null &<CR>
 
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
+nmap <C-_>   <Plug>NERDCommenterToggle
+vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
 " Easy access to the shell
 map <leader><leader> :!

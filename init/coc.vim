@@ -1,10 +1,21 @@
 " coc config
 let g:coc_global_extensions = [
   \ 'coc-snippets',
+  \ 'coc-emmet', 
+  \ 'coc-emoji', 
   \ 'coc-pairs',
   \ 'coc-tsserver',
   \ 'coc-eslint', 
   \ 'coc-prettier', 
+  \ 'coc-angular', 
+  \ 'coc-explorer', 
+  \ 'coc-jest', 
+  \ 'coc-yaml', 
+  \ 'coc-yank', 
+  \ 'coc-go', 
+  \ 'coc-docker', 
+  \ 'coc-rls', 
+  \ 'coc-r-lsp', 
   \ 'coc-json', 
   \ ]
 " from readme
@@ -156,3 +167,25 @@ nnoremap <silent> <space>j  :<C-u>CocNext<CR>
 nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list.
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
+" Explorer
+let g:coc_explorer_global_presets = {
+\   'floating': {
+\      'position': 'floating',
+\   },
+\   'floatingLeftside': {
+\      'position': 'floating',
+\      'floating-position': 'left-center',
+\      'floating-width': 30,
+\   },
+\   'floatingRightside': {
+\      'position': 'floating',
+\      'floating-position': 'right-center',
+\      'floating-width': 30,
+\   },
+\   'simplify': {
+\     'file.child.template': '[selection | clip | 1] [indent][icon | 1] [filename omitCenter 1]'
+\   }
+\ }
+
+" Toggle coc Explorer
+nnoremap <space>e :CocCommand explorer<CR>
