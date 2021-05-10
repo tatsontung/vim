@@ -76,6 +76,9 @@ Plug 'ryanoasis/vim-devicons'
 " Vim Floating terminal
 Plug 'voldikss/vim-floaterm'
 
+" Vim Colorizer
+Plug 'lilydjwg/colorizer'
+
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
 
