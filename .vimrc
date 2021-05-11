@@ -31,7 +31,7 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
 " On-demand loading
-Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 " Have the file system follow you around
 Plug 'airblade/vim-rooter'
@@ -49,7 +49,10 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
-" coc intellisense Use release branch (recommend)
+" Ranger
+Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
+
+" Coc intellisense Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " Completion
@@ -81,6 +84,9 @@ Plug 'voldikss/vim-floaterm'
 
 " Vim Colorizer
 Plug 'lilydjwg/colorizer'
+
+" See what keys do like in emacs
+Plug 'liuchengxu/vim-which-key'
 
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
