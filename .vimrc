@@ -30,15 +30,6 @@ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " Multiple Plug commands can be written in a single line using | separators
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 
-" On-demand loading
-"Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
-" Have the file system follow you around
-Plug 'airblade/vim-rooter'
-
-" Using a non-master branch
-Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
-
 " Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
 Plug 'fatih/vim-go', { 'tag': '*' }
 
@@ -48,9 +39,6 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 " Plugin outside ~/.vim/plugged with post-update hook
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-
-" Ranger
-Plug 'kevinhwang91/rnvimr', {'do': 'make sync'}
 
 " Coc intellisense Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -84,9 +72,6 @@ Plug 'voldikss/vim-floaterm'
 
 " Vim Colorizer
 Plug 'lilydjwg/colorizer'
-
-" See what keys do like in emacs
-Plug 'liuchengxu/vim-which-key'
 
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()

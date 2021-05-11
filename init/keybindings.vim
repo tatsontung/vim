@@ -43,7 +43,7 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
 " Easy access to the shell
 map <leader><leader> :!
-map <leader>t :terminal<CR>
+"map <leader>t :terminal<CR>
 
 " Copy paste with + registrer
 vnoremap <leader>c "+y
