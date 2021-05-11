@@ -8,9 +8,6 @@ let maplocalleader = ";"
 nnoremap <leader>] :bnext<CR>
 nnoremap <leader>[ :bprevious<CR>
 nnoremap <leader>q :bdelete<CR>
-nnoremap <silent> <C-]> :bnext<CR>
-nnoremap <silent> <C-[> :bprevious<CR>
-nnoremap <silent> <S-W> :bdelete<CR>
 
 " Search
 nmap <leader>s  :%s/
