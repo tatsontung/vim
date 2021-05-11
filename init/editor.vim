@@ -14,7 +14,7 @@ set ttimeout                    " Add back a timeout for terminal vim
 set ttimeoutlen=100             " Keep the timeout very short
 
 set showcmd                     " Show typed command prefixes while waiting for operator
-set mouse=                     " Use mouse support in XTerm/iTerm.
+set mouse=a                     " Use mouse support in XTerm/iTerm.
 
 set expandtab                   " Use soft tabs
 set tabstop=2                   " Tab settings
@@ -47,7 +47,7 @@ set history=1024                " History size
 set smartcase                   " Smart case-sensitivity when searching (overrides ignorecase)
 
 set autoread                    " No prompt for file changes outside Vim
-
+set clipboard=unnamedplus       " Copy paste between vim and everything else
 set swapfile                    " Keep swapfiles
 set directory=~/.vim-tmp,~/tmp,/var/tmp,/tmp
 set backupdir=~/.vim-tmp,~/tmp,/var/tmp,/tmp
