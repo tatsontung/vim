@@ -1,8 +1,7 @@
 syntax on
 set t_Co=256
 set background=dark
-colorscheme dracula 
-"let g:gruvbox_constrast_dark = 'hard'
+colorscheme gruvbox 
 
 " checks if your terminal has 24-bit color support
 if (has("termguicolors"))
