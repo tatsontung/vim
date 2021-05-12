@@ -1,3 +1,4 @@
+" Map Space to show Whicky Menu + Leader key map
 nnoremap <silent> <Space> :silent <c-u> :WhichKey ','<CR>
 vnoremap <silent> <Space> :silent <c-u> :WhichKeyVisual ','<CR>
 
@@ -6,7 +7,7 @@ let g:which_key_map =  {}
 autocmd VimEnter * call which_key#register(',', "g:which_key_map")
 "" Define a separator
 let g:which_key_sep = '→'
-set timeoutlen=500
+set timeoutlen=100
 
 "" Not a fan of floating windows for this
 let g:which_key_use_floating_win = 0
@@ -168,15 +169,9 @@ let g:which_key_map.l = {
 let g:which_key_map.t = {
       \ 'name' : '+terminal' ,
       \ ';' : [':FloatermNew --wintype=popup --height=20'       , 'terminal'],
-      \ 'f' : [':FloatermNew fzf'                               , 'fzf'],
       \ 'g' : [':FloatermNew lazygit'                           , 'git'],
       \ 'd' : [':FloatermNew lazydocker'                        , 'docker'],
       \ 'n' : [':FloatermNew node'                              , 'node'],
-      \ 'N' : [':FloatermNew nnn'                               , 'nnn'],
       \ 'p' : [':FloatermNew python'                            , 'python'],
-      \ 'r' : [':FloatermNew ranger'                            , 'ranger'],
-      \ 't' : [':FloatermToggle'                                , 'toggle'],
-      \ 'y' : [':FloatermNew ytop'                              , 'ytop'],
-      \ 's' : [':FloatermNew ncdu'                              , 'ncdu'],
       \ }
 
