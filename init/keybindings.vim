@@ -1,11 +1,12 @@
 " Keybindings
 " -----------
+let mapleader = ","
+let maplocalleader = ";"
 
-"let mapleader = ","
-"let maplocalleader = ";"
+nnoremap <Space> <Nop>
 
-let g:mapleader = "\<Space>"
-let g:maplocalleader = ','
+"let g:mapleader = "\<Space>"
+"let g:maplocalleader = ','
 
 " Navigation with buffer
 nnoremap <leader>] :bnext<CR>
