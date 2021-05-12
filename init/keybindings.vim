@@ -1,8 +1,11 @@
 " Keybindings
 " -----------
 
-let mapleader = ","
-let maplocalleader = ";"
+"let mapleader = ","
+"let maplocalleader = ";"
+
+let g:mapleader = "\<Space>"
+let g:maplocalleader = ','
 
 " Navigation with buffer
 nnoremap <leader>] :bnext<CR>
@@ -41,10 +44,6 @@ map <leader>/   <plug>NERDCommenterToggle
 nmap <C-_>   <Plug>NERDCommenterToggle
 vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 
-" Easy access to the shell
-map <leader><leader> :!
-"map <leader>t :terminal<CR>
-
 " Copy paste with + registrer
 vnoremap <leader>c "+y
 map <leader>v "+p
@@ -53,11 +52,11 @@ map <leader>v "+p
 noremap <C-b> :Buffers<CR>
 nnoremap <C-g>g :Ag<CR>
 nnoremap <C-f>c :Commands<CR>
+nnoremap <C-f>m :Maps<CR>
 nnoremap <C-f>f :Files<CR>
 nnoremap <silent> <C-f>p :Files <C-R>=expand('%:h')<CR><CR>
 
 " Select all
 nmap <C-a> gg<S-v>G
 
-" Insert Emoji
-nmap <leader>cu :Unicodemoji<CR>
+

@@ -38,6 +38,9 @@ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
+" Ranger
+Plug 'francoiscabrol/ranger.vim'
+
 " Coc intellisense Use release branch (recommend)
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
@@ -71,6 +74,13 @@ Plug 'voldikss/vim-floaterm'
 
 " Vim Colorizer
 Plug 'lilydjwg/colorizer'
+
+" Whichkey
+Plug 'liuchengxu/vim-which-key'
+
+" On-demand lazy load
+"Plug 'liuchengxu/vim-which-key', { 'on': ['WhichKey', 'WhichKey!'] }
+"autocmd! User vim-which-key call which_key#register(',', 'g:which_key_map')
 
 " List ends here.  Plugins become visible to Vim after this call.
 call plug#end()
