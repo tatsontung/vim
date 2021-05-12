@@ -58,3 +58,6 @@ nnoremap <silent> <C-f>p :Files <C-R>=expand('%:h')<CR><CR>
 
 " Select all
 nmap <C-a> gg<S-v>G
+
+" Insert Emoji
+nmap <leader>cu :Unicodemoji<CR>

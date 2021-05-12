@@ -16,7 +16,8 @@ call plug#begin('~/.vim/plugged')
 
 " Make sure you use single quotes
 " ColorSchemes
-Plug 'gruvbox-community/gruvbox'
+"Plug 'gruvbox-community/gruvbox'
+Plug 'dracula/vim', { 'as': 'dracula' }
 " Status Line bar
 Plug 'vim-airline/vim-airline'
 "Plug 'vim-airline/vim-airline-themes'
@@ -63,7 +64,8 @@ Plug 'mhinz/vim-startify'
 
 " Vim Dev Icons
 Plug 'ryanoasis/vim-devicons'
-
+"Plug 'junegunn/vim-emoji'
+Plug 'yazgoo/unicodemoji'
 " Vim Floating terminal
 Plug 'voldikss/vim-floaterm'
 
