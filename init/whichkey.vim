@@ -2,9 +2,11 @@
 nnoremap <silent> <Space> :silent <c-u> :WhichKey ','<CR>
 vnoremap <silent> <Space> :silent <c-u> :WhichKeyVisual ','<CR>
 
+" Register which key map
+autocmd VimEnter * call which_key#register(',', "g:which_key_map")
+
 " Create map to add keys to
 let g:which_key_map =  {}
-autocmd VimEnter * call which_key#register(',', "g:which_key_map")
 "" Define a separator
 let g:which_key_sep = '→'
 set timeoutlen=100

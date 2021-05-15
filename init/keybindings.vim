@@ -11,7 +11,6 @@ nnoremap <Space> <Nop>
 " Navigation with buffer
 nnoremap <leader>] :bnext<CR>
 nnoremap <leader>[ :bprevious<CR>
-nnoremap <leader>q :bdelete<CR>
 
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
@@ -38,6 +37,7 @@ map <leader>cf       :tabedit ~/.vimrc<CR>
 
 " Reload .vimrc
 map <leader>rv  :source ~/.vimrc<CR>
+map <leader>rt :!~/.vim/bin/update >/dev/null &<CR>
 
 " Auto-indent whole file
 nmap <leader>=  gg=G``
@@ -54,8 +54,6 @@ nnoremap <C-y>  3<C-y>
 vmap <tab> >gv
 vmap <s-tab> <gv
 
-map <leader>rt :!~/.vim/bin/update >/dev/null &<CR>
-
 " Comment/uncomment lines
 map <leader>/   <plug>NERDCommenterToggle
 nmap <C-_>   <Plug>NERDCommenterToggle
@@ -64,14 +62,6 @@ vmap <C-_>   <Plug>NERDCommenterToggle<CR>gv
 " Copy paste with + registrer
 vnoremap <leader>c "+y
 map <leader>v "+p
-
-" Fzf Mapping
-noremap <C-b> :Buffers<CR>
-nnoremap <C-g>g :Ag<CR>
-nnoremap <C-f>c :Commands<CR>
-nnoremap <C-f>m :Maps<CR>
-nnoremap <C-f>f :Files<CR>
-nnoremap <silent> <C-f>p :Files <C-R>=expand('%:h')<CR><CR>
 
 " Select all
 nmap <C-a> gg<S-v>G
