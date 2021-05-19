@@ -22,7 +22,8 @@ let g:startify_bookmarks = [
             \ { 'b': '~/.bashrc' },
             \ { 'z': '~/.zshrc' },
             \ { 'v': '~/.vim/.vimrc' },
-            \ '~/Blog',
-            \ '~/Code',
-            \ '~/Pics',
+            \ '~/workspace',
+            \ '~/.config',
+            \ '~/config',
+            \ '~/.local/share',
             \ ]
