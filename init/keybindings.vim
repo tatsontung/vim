@@ -9,8 +9,9 @@ nnoremap <Space> <Nop>
 "let g:maplocalleader = ','
 
 " Navigation with buffer
-nnoremap <leader>] :bnext<CR>
-nnoremap <leader>[ :bprevious<CR>
+nnoremap <TAB> :bnext<CR>
+nnoremap <S-TAB> :bprevious<CR>
+nnoremap <S-Q> :bdelete<CR>
 
 " Remap splits navigation to just CTRL + hjkl
 nnoremap <C-h> <C-w>h
