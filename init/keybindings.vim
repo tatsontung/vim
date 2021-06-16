@@ -30,9 +30,9 @@ map <Leader>th <C-w>t<C-w>H
 map <Leader>tk <C-w>t<C-w>K
 
 " Got to change esc
-imap jk <ESC> 
-imap kj <ESC> 
-imap jj <ESC> 
+imap jk <ESC>
+imap kj <ESC>
+imap jj <ESC>
 
 " Search
 nmap <leader>s  :%s/
