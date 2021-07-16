@@ -47,6 +47,11 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 " Completion
 Plug 'mattn/emmet-vim', { 'for': 'html' }
 
+" Nerd Tree
+Plug 'preservim/nerdtree' |
+      \ Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+
 " Nerd Commenter
 Plug 'preservim/nerdcommenter'
 
