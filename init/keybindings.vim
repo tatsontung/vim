@@ -72,4 +72,6 @@ map <leader>v "+p
 " Select all
 nmap <C-a> gg<S-v>G
 
-
+" Fugitive Conflict Resolution
+nnoremap gdh :diffget //2<CR>
+nnoremap gdl :diffget //3<CR>

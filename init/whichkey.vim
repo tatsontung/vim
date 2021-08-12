@@ -110,7 +110,7 @@ let g:which_key_map.g = {
       \ 'B' : [':GBrowse'                          , 'browse'],
       \ 'c' : [':Git commit'                       , 'commit'],
       \ 'd' : [':Git diff'                         , 'diff'],
-      \ 'D' : [':Gdiffsplit'                       , 'diff split'],
+      \ 'D' : [':Gvdiffsplit!'                     , 'diff merge 3 ways split'],
       \ 'g' : [':GGrep'                            , 'git grep'],
       \ 'G' : [':Gstatus'                          , 'status'],
       \ 'h' : [':GitGutterLineHighlightsToggle'    , 'highlight hunks'],
