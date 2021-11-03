@@ -8,6 +8,8 @@ nnoremap <Space> <Nop>
 "let g:mapleader = "\<Space>"
 "let g:maplocalleader = ','
 
+nnoremap <leader>c :nohl<CR>
+
 " Navigation with buffer
 nnoremap <TAB> :bnext<CR>
 nnoremap <S-TAB> :bprevious<CR>

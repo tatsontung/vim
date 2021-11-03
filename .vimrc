@@ -62,7 +62,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 
 " Vim Multiple Cursor
-Plug 'terryma/vim-multiple-cursors'
+Plug 'mg979/vim-visual-multi', {'branch': 'master'}
 
 " Vim Polyglot
 Plug 'sheerun/vim-polyglot'
